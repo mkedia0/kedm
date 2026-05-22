@@ -1,10 +1,11 @@
 /* Base */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   background: #0b0c10;
   color: #e6e6e6;
   overflow-x: hidden;
+  letter-spacing: 0.2px;
 }
 
 /* Subtle animated background */
@@ -98,8 +99,13 @@ body {
 .block {
   padding: 120px 10%;
   opacity: 0;
-  transform: translateY(40px);
-  animation: fadeInUp 1.5s ease forwards;
+  transform: translateY(60px);
+  transition: all 1.2s ease;
+}
+
+.block.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .block:nth-child(2) { animation-delay: 0.2s; }
