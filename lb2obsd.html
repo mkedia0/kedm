@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Letterboxd → Obsidian</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="logo"><a href="index.html" style="color:white;text-decoration:none;">YOUR NAME</a></div>
+    <button class="menu-btn" onclick="toggleMenu()">menu</button>
+  </header>
+
+  <!-- Menu -->
+  <div id="menu" class="menu">
+    <a href="index.html">Home</a>
+    <a href="art.html">Art</a>
+    <a href="projects.html">Projects</a>
+    <a href="impact.html">Social Impact</a>
+    <a href="media.html">Media</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <main class="case">
+
+    <!-- Hero -->
+    <section class="case-hero">
+      <h1>Letterboxd → Obsidian</h1>
+      <p>
+        A system that transforms your Letterboxd watch history into an Obsidian graph and structured database.
+      </p>
+    </section>
+
+    <!-- What it is -->
+    <section class="case-block">
+      <h2>What this is</h2>
+      <p>
+        This project connects film logging data from Letterboxd to Obsidian,
+        turning passive viewing history into a structured, queryable knowledge graph.
+      </p>
+    </section>
+
+    <!-- Why I built it -->
+    <section class="case-block">
+      <h2>Why I built it</h2>
+      <p>
+        I wanted a way to move from passive consumption of films to active reflection and pattern recognition.
+        Instead of just logging movies, the goal was to build a system that surfaces relationships between them.
+      </p>
+    </section>
+
+    <!-- How it works -->
+    <section class="case-block">
+      <h2>How it works</h2>
+      <ul>
+        <li>Scrapes / exports Letterboxd watch history</li>
+        <li>Parses films into structured metadata (title, year, tags)</li>
+        <li>Converts entries into Obsidian-compatible markdown notes</li>
+        <li>Builds links between films to form a graph structure</li>
+      </ul>
+    </section>
+
+    <!-- Impact -->
+    <section class="case-block">
+      <h2>What it enables</h2>
+      <ul>
+        <li>Visualizing film taste as a network</li>
+        <li>Finding patterns across genres / directors / moods</li>
+        <li>Turning media consumption into a knowledge system</li>
+      </ul>
+    </section>
+
+    <!-- Links -->
+    <section class="case-block">
+      <h2>Links</h2>
+      <p>
+        <a href="https://github.com/mkedia0/kedm" target="_blank" style="color:white;">
+          View Project on GitHub
+        </a>
+      </p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
